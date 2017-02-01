@@ -15,6 +15,7 @@ get "/index"do
 end
 
 get '/new' do
+  @houses = House.all()
   erb :new
 end
 
