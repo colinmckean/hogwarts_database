@@ -1,6 +1,23 @@
-<select>
-  <option value="Gryffindor">Gryffindor</option>
-  <option value="Ravenclaw">Ravenclaw</option>
-  <option value="Hufflepuff">Hufflepuff</option>
-  <option value="Slytherin">Slytherin</option>
+<h1>MAKE A NEW STUDENT</h1>
+<div class="container">
+<form action="/new" method="post">
+  <label>
+    First Name:
+  <input type="text" name="first_name">
+  </label>
+  <label>Last Name:<input type="text" name="last_name">
+  </label>
+  <label>Age:
+  <input type="number" name="age">
+  </label>
+  <label select house:>
+<select name="house_id">
+  <option value="1">Gryffindor</option>
+  <option value="2">Ravenclaw</option>
+  <option value="3">Hufflepuff</option>
+  <option value="4">Slytherin</option>
 </select>
+</label>
+<button type="submit" value="new student">SUBMIT</button>
+</form>
+</div>

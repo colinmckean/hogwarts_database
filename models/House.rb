@@ -1,7 +1,7 @@
 require_relative "../db/SqlRunner"
 
 class House
-  attr_reader :house_name, :url
+  attr_reader :id, :house_name, :url
   def initialize(options)
     @id = options['id'].to_i
     @house_name = options['house_name']
